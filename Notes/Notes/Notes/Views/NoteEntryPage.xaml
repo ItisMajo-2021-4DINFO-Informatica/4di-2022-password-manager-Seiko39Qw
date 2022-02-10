@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.NoteEntryPage"
+             Title="Anime List" BackgroundColor="#503F54">
+    <!-- Layout children vertically -->
+    <StackLayout Margin="20">
+        <Editor Placeholder="Nome Anime"
+                TextColor="#CBBAD4"
+                Text="{Binding ServiceName}"
+                HeightRequest="50" />
+        <Editor Placeholder="Episodio"
+                TextColor="#CBBAD4"
+                Text="{Binding Username}"
+                HeightRequest="50" />
+        <Editor Placeholder="commento personale"
+                TextColor="#CBBAD4"
+                Text="{Binding Password}"
+                HeightRequest="50" />
+        <Editor Placeholder="voto"
+                TextColor="#CBBAD4"
+                Text="{Binding URL}"
+                HeightRequest="50" />
+        <!-- Layout children in two columns -->
+        <Grid ColumnDefinitions="*,*">
+            <Button Text="Save"
+                    BackgroundColor="#4E2A57"
+                    TextColor="#CBBAD4"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="1"
+                    Text="Delete"
+                    BackgroundColor="#4E2A57"
+                    TextColor="#CBBAD4"
+                    Clicked="OnDeleteButtonClicked"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

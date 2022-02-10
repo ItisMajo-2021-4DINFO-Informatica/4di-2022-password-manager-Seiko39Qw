@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.AboutPage"
+             Title="Anime List"
+             BackgroundColor="#503F54">
+    <!-- Layout children in two rows -->
+    <Grid RowDefinitions="Auto,*">
+        <Image Source="xamarin_logo.png"
+               BackgroundColor="{OnPlatform iOS=LightSlateGray, Android=#3B166E}"
+               VerticalOptions="Center"
+               HeightRequest="64" />
+        <!-- Layout children vertically -->
+        <StackLayout 
+                     Grid.Row="1"
+                     Margin="20"
+                     Spacing="20">
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Anime List"
+                                  TextColor="#CBBAD4"
+                                  FontAttributes="Bold"
+                                  FontSize="22" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label TextColor="#CBBAD4"
+                   Text="Se hai pagato questa app sei stato scammato Lmao.   Questa e una distribuzione gratuita del app, L'utilizzo e dedicato al appuntarsi l'episodio si e arrivati del proprio anime preferito.                                                                                    si consiglia l'utilizzo di adblock per evitare pubblicita indesiderate. "/>
+                 
+            <Button BackgroundColor="#4E2A57"
+                    TextColor="#CBBAD4"
+                    Text="Premimi"
+                    Clicked="OnButtonClicked" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8G+OXGgVY44NT7lvAvKQz6oLk8qS2yiGqXwEU0Aoul3t300mdWNAwzE30muEsDA3TJroXqUwDojcZJ5nN7hU9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Seiko\\Desktop\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Seiko\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Seiko\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\Seiko\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
